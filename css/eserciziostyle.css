@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0px;
+}
+
+#my-section {
+    background: red;
+}
+#my-section p {
+    margin:0px;
+}
