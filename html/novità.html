@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8">
-        <title>NOVITà</title>
+         <title>Novità</title>
+         <meta charset="UTF-8">
+         <meta name="keyword" content="News, Blog, Marketing, Tecnologia">
+         <meta name="description" content="Tutte le ultime novità del settore tecnologico e marketing">
+         <meta name="author" content="time2marketing">
+         <meta http-equiv="refresh" content="30">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+       
         <style>
+            
             .black{  
                 background-color: black;
                 color: white;
@@ -33,62 +40,72 @@
                 padding: 10px;
             
             }
-            .blocco-tags{
-                padding-bottom:10px;
-            }
         </style>
     </head>
     <body>
-        <!--Menu-->
+    <!--blocco menu-->
+    <nav>
         <div class="menu black"> 
             <ul>
-                <li> <a href="">Home</a></li>
-                <li><a href="">Chi siamo</a></li>
-                <li><a href="">Servizi</a></li>
+                <li> <a href="#">Home</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Servizi</a></li>
             </ul>
-            <a href="https://www.time2marketing.com/"> <img src="img/logotime2marketing.png"></a>
+            <a href="https://www.time2marketing.com/"> <img src="img/logotime2marketing.png" alt="logo time 2 marketing"></a>
             <ul>
-                <li><a href="">Case history</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Contatti</a></li>
+                <li><a href="#">Case history</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contatti</a></li>
             </ul>
-
         </div>
-        <!--Blocco header-->
-        <div class="header red">
+    </nav> 
+    <!--Blocco header-->
+    <header>
+        <div class="red header">
             <h1> LE ULTIME NOVITà DAL MONDO</h1>
-        </div>
-        <!--breadcrumb-->  
-        <div class="breadcrumb black">
-            <p>Home/Novità/</p>
-        </div>
-        <!-- blocco news-->
-        <div clas="blocco-news">
+        </div> 
+    </header>
+    <!--breadcrumb-->  
+    <div class="black breadcrumb">
+        <p>Home/Novità/</p>
+    </div>
+    <!-- blocco news-->
+    <div clas="blocco-news">
+        <article>
             <div id="news-1" class="news">
-                <img src="img/immagine mascherina news.jpg" alt="donna con mascherina" width="500px">
-                <h2>Titolo</h2>
-                <p> Data e autore</p>
-                <p>paragrafo news</p>
+                <img src="img/immagine mascherina news.jpg" alt="donna con mascherina" width="500">
+                <h2>Come scoprire un sorriso dietro la mascherina</h2>
+                <p> 9 giugno 2020 / By <a href="#">Giuliano Aluffi</a></p>
+                <div>
+                    <p> I dispositivi di protezione in realtà non nascondono completamente la nostra espressività.</p>
+                    <p>La mascherina anti Coronavirus, coprendo buona parte del viso, ci rende assai meno riconoscibili ed è il motivo per cui il nuovo aggiornamento di <del cite="https://support.apple.com/it-it/HT210393" datetime="2019-06-29">iOS 13,5</del> <ins>iOS 13,6</ins> di
+                        Apple per l'iPhone ora permette di sbloccare il telefono senza dover aspettare che il riconoscimento facciale fallisca più volte.
+                    </p>
+                </div>
+                <span><a href="articoli/articolo6.html" title="Leggi la news Come scoprire un sorriso dietro la mascherina">Leggi la news</a></span> 
             </div>
-            <hr>
+        </article>
+        <hr>
+        <article>
             <div id="news-2" class="news">
                 <img src="img/immagine mascherina news.jpg" alt="donna con mascherina" width="500px">
                 <h2>Titolo</h2>
                 <p> Data e autore</p>
                 <p>paragrafo news</p>
             </div>
-
-        </div>
-        <!--blocco colonna dx-->
+        </article>
+    </div>
+    <!--blocco colonna dx-->
+    <aside>
         <div class="colonna-dx">
             <!--lista articoli recenti-->
-            <div> 
+            <div class="blocco-articoli"> 
                 <h4> Articoli recenti</h4>
                 <ul>
-                    <li> <a href="articolo1.html">Primo articolo di prova</a></li>
-                    <li> <a href="articolo6.html">Come scoprire un sorriso dietro la mascherina</a></li>
-                     <li> <a href="articolo3.html">Prove tabelle e link</a></li>
-                    <li> <a href="articolo5.html">Prove di liste</a></li>
+                    <li> <a href="articoli/articolo1.html">Primo articolo di prova</a></li>
+                    <li> <a href="articoli/articolo6.html">Come scoprire un sorriso dietro la mascherina</a></li>
+                    <li> <a href="articoli/esercitazioni/articolo3.html">Prove di tabelle e di link</a></li>
+                    <li> <a href="articoli/esercitazioni/cartella/articolo5.html">Prove di liste</a></li>
                 </ul>
             </div>
             <!--blocco tags-->
@@ -100,13 +117,15 @@
                 <span class="tag"> <a href="#">formazione</a></span>   
             </div>
         </div>
-        <!--Blocco footer-->
-        <div class="footer black">
-            <p> Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 - 35127 Padova Italy Tel. + 39 049 8808289 - Fax + 39 049 8826581 P.IVA 03796490286 | Iscritta Ufficio imprese di Padova al numero 338317 Capitale versato: 10.000€ Privacy
+    </aside>    
+    <!--Blocco footer-->
+    <footer>
+        <div class="black footer">
+            <p> Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 - 35127 Padova Italy <span style="font-size: large;">Tel. + 39 049 8808289</span> - Fax + 39 049 8826581 P.IVA 03796490286 | Iscritta Ufficio imprese di Padova al numero 338317 Capitale versato: 10.000€ Privacy <a href="#">Privacy</a>
             </p>
-
-
         </div>
+    </footer>
+        
         
     </body>
 </html>

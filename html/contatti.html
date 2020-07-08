@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contatti</title>
+        <style>
+            .black{  
+                background-color: black;
+                color: white;
+            }
+
+            .red {
+                background-color: darkred;
+                color: white          
+            }
+            .header {
+                text-align: center;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            .footer {
+                text-align: center;
+                padding-top:20px;
+                padding-bottom: 20px;
+            }
+            .breadcrumb {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .tag {
+                background-color: gray;
+                padding: 10px;
+            
+            }
+            .blocco-tags{
+                padding-bottom:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Menu-->
+        <nav>
+            <div class="black menu"> 
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Servizi</a></li>
+                </ul>
+                <a href="https://www.time2marketing.com/"> <img src="img/logotime2marketing.png" alt="logo time 2 marketing"></a>
+                <ul>
+                    <li><a href="">Case history</a></li>
+                    <li><a href="novità.html">News</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!--Blocco header-->
+        <header>
+            <div class="red header">
+                <h1> Contatti</h1>
+            </div>
+        </header>
+        <!--blocco iframe -->
+        <div id="blocco-mappa">
+            <iframe  style="width:100%; height:200px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.83882546644!2d11.92044031555504!3d45.392421979100206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477edbf4f28b2131%3A0xad01ef4ec7f72cd9!2sTime2marketing!5e0!3m2!1sit!2sit!4v1594202632624!5m2!1sit!2sit" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <!--blocco centrale-->
+        <section>
+            <div id="blocco-contatti">
+                <h2> Chi viaggia senza incontrare l'altro, non viaggia, si sposta</h2>
+                <div id="blocco-nero">
+                    <div id="blocco-telefono" class="riferimenti">
+                        <span class="intesazione">Telefono</span> <br>
+                        <span>Lun-Ven ):00-13:00// 14:30-18:30 </span><br>
+                        <a href="tel+390498808289">+39 049 880 8289</a>
+                    </div>
+                    <div id="blocco-email" class="riferimenti">
+                        <span class="intesazione">E-mail</span> <br>
+                        <span>per info scrivi a </span> <br>
+                        <a href="mailto:info@time2marketing.com">info@time2markeing.com</a>
+                    </div>
+                    <div id="blocco-indirizzo" class="riferimenti">
+                        <span class="intesazione">Indirizzo</span> <br>
+                        <span><a href="">via del Progresso 30 <br> Padova 35127, Italia</a> </span> <br>
+                        
+                    </div>
+                    <div id="blocco-form">
+                        <form action="/action_page.php">
+                            <input type="text" name="nome-cognome" placeholder="Nome e Cognome (*)" required>
+                            <input type="text" name="azienda" placeholder="Azienda (*)" required> <br>
+                            <input type="email" name="email" placeholder="Email (*)" required>
+                            <input type="text" name="sito-web" placeholder="Sito Web (*)" required> <br>
+                            <textarea name="messaggio" rows="10" cols="50" placeholder="Il tuo messaggio"></textarea> <br>
+                            <input type="checkbox" name="privacy" id="privacy" value="consenso-privacy" required>
+                            <label for="privacy"> Ho letto l'informativa sulla <a href="#">Privacy</a> e do il mio consenso</label> <br>
+                            <input type="submit" value="Invia">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <!--Blocco footer-->
+        <div class="footer black">
+                <p> Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 - 35127 Padova Italy Tel. + 39 049 8808289 - Fax + 39 049 8826581 P.IVA 03796490286 | Iscritta Ufficio imprese di Padova al numero 338317 Capitale versato: 10.000€ Privacy
+                </p>
+
+
+        </div>
+        
+        
+    </body>
+</html>
