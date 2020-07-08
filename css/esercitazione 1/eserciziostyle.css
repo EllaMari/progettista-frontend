@@ -7,77 +7,71 @@ body {
 }
 
 header {
+    width:100%;
     background: red;
     padding: 10px;
     margin-top: 0px;
 }
-.logo {
+
+header > div {
     display: inline-block;
-    font-weight: bold;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: middle;
 }
+
 .logo a {
     color: white;  
     text-decoration: none;
-    vertical-align: middle;
-
+    font-family: 'Righteous', cursive;
+    font-size:30px; 
 }
 
 .main-nav {
     display: inline-block;
-    width: calc(100% - 170px);
-
+    width: calc(100% - 137px);
 }
+
 .main-nav-list {
   text-align: right;
   width: 100%;
   vertical-align: middle;
 }
- .main-nav-item {
-     display: inline-block;
-    
 
- }
- .main-nav-item a {
-     color:white;
-     text-decoration: none;
-     padding: 20px;
-
- }
- .main-nav-item a:hover {
-     color: blue;
- }
-.button a{
-    background-color: blue;
-    padding: 20px;
-    border-radius: 20px;
-
+.main-nav-item {
+   display: inline-block;
 }
-.button a:hover {
-    background-color: white;
+
+.main-nav-item a {
+    color:white;
+    text-decoration: none;
+ }
+
+ .main-nav-item a::after {
+     content: " | ";
+ }
+.main-nav-item.calltoaction{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 20px;
+}
+.main-nav-item.calltoaction a::after {
+    content:none
+}
+.main-nav-item a:hover {
     color:blue;
 }
 
-.hero {
-    background-image: url(Strugnano.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    height: 550px;
+#hero img {
     width: 100%;
 
 }
 
 h1 {
     font-family: sans-serif;
-    font-family: ;
+    font-family:'Righteous', cursive;
     margin:0px;
 }
 
-.mysection {
+.my-section {
     margin: 10px;
     border: 3px solid black;
     padding: 20px;
