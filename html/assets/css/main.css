@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body a:hover, .menu-items a:hover, .blocco-articoli a:hover{
+    color: darkred;
+    transition: 0.5s;
+}
+
+.black{  
+    background-color: black;
+    color: white;
+}
+
+.red {
+    background-color: darkred;
+    color: white          
+}
+
+nav {
+    width:100%;
+    position: fixed;
+    top:0px;
+   
+}
+nav .menu{
+    text-align: center;
+
+
+}
+nav .menu .menu-items, nav .menu .logo, .menu-items li {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.menu .logo img {
+    width: 170px;
+    position: relative; 
+    top: -5px;
+    left: 15px;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu-items li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 111px; /*20px + 91 px altezza menu*/
+}
+
+.breadcrumb-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.blocco-news
+{
+    display: inline-block;
+    width: 70%;
+
+}
+
+.news .copertina {
+    width: 100%;
+}
+
+aside {
+    padding-left: 50px;
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+}
+.footer {
+    text-align: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+    
+}
+.footer p{
+    font-size: large;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.breadcrumb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.blocco-articoli ul {
+    padding-left:0px;
+}
+.blocco-articoli li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.blocco-articoli a{
+    color: gray;
+    text-decoration: none;
+
+}
+.tag a {
+    color: gray;
+    background-color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    line-height:3;
+    margin-left: 2px;
+    margin-right: 2px;  
+}
+
+.tag a:hover {
+    color:white;
+    background-color:darkred;
+    transition: 0.3s;
+}
+#blocco-contatti {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+ 
+.contatti {
+    background-color: lightslategrey;
+}
+
+#blocco-nero {
+    padding:50px;
+    line-height:2; 
+}
+#blocco-form {
+    padding-top:50px
+}
+
+
+.riferimenti {
+    display: inline-block;
+    width: 30%;
+}
+
+span.intestazione  {
+    text-transform: uppercase;
+    font-weight: bold;
+}
