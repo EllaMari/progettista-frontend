@@ -59,7 +59,7 @@ a.logo {
       padding-left: 180px;
   }
 
-button {
+button, input#invia {
     font-family: 'Montserrat', sans-serif;
     font-weight: light;
     font-size: 15px;
@@ -112,11 +112,6 @@ button {
     text-decoration: none;
   }
 
-#contact-form{
-    max-width: 100%;
-    margin: 0 100px;
-    }
-
 
 .prototypes-img img {
       width:500px;
@@ -125,4 +120,19 @@ button {
  #about-us .prototypes-container {
      padding-left: 100px;
      text-align: left;
+ }
+#contact-form{
+    max-width: 100%;
+    margin: 0 100px;
+    padding: 30px;
+    }
+input#fname, input#lname{
+    width: 46%;
+}
+ 
+input#email, input#subject, textarea {
+    width:95%;
+}
+ input, textarea, #contact-form h4{
+     margin: 10px;
  }
