@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.white {
+    background-color: white;
+    color: black
+
+}
+
+.grey {
+    background-color:#EAEAE5;
+}
+
+    
+nav {
+    width:100%;
+    top:10px; 
+    text-align: center;
+}
+
+ .menu-items li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+ }
+ a.logo, .menu-items li a  {
+    color: black;
+    text-decoration: none;
+ }
+  .menu-items li a:hover {
+      color: #00d2b5;
+ }
+
+  .landing-page, .create-prototypes {
+    display:flex;
+    align-items: center;
+    
+  }
+  .call-to-action {
+      padding-left: 200px;
+      width: 50%;
+      
+  }
+
+  .landing-img, .prototypes-img {
+      width:50%
+  }
+
+  .landing-img img {
+      height: 500px;
+      width: auto;
+      max-width: 100%;
+  }
+
+  .features-container {
+      
+      display: flex;
+      flex-direction: row ;
+    
+      
+
+  }
+
+  .features-item {
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .features, .prototypes-section {
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+
+  .features h1, .about-us h1 {
+      text-align: center;
+  }
+  .prototypes-img img {
+      width:600px;
+  }

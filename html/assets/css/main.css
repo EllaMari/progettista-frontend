@@ -10,11 +10,6 @@ body {
 
 }
 
-body a:hover, .menu-items a:hover, .blocco-articoli a:hover{
-    color: darkred;
-    transition: 0.5s;
-}
-
 .black{  
     background-color: black;
     color: white;
@@ -25,46 +20,71 @@ body a:hover, .menu-items a:hover, .blocco-articoli a:hover{
     color: white          
 }
 
+
 nav {
     width:100%;
     position: fixed;
-    top:0px;
+    top:0px; 
+}
+
+.burger-menu {
+    display: none;
+}
+
+nav .menu {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
    
 }
-nav .menu{
-    text-align: center;
 
-
+nav .menu .menu-items {
+    padding: 0;
 }
-nav .menu .menu-items, nav .menu .logo, .menu-items li {
-    display: inline-block;
-    vertical-align: middle;
-    
+nav .menu .logo {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
 .menu .logo img {
-    width: 170px;
-    position: relative; 
-    top: -5px;
-    left: 15px;
+    width:170px;
+    position: relative;
+    top:-5px;
 }
 
 .menu-items li {
-  list-style: none;
-  padding: 20px;
+    display: inline-block;
+    list-style: none;
+    padding:20px;
 }
-
-.menu-items li a {
+.menu-items li a, .mobile-menu li a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
  }
 
+ .menu-items li a:hover {
+     color: darkred;
+ }
+
+.mobile-menu {
+    display: none ;
+    width: 100%;
+    height:50vh;
+    position: sticky;
+    top: 48px;
+    
+}
+.mobile-menu li {
+    list-style: none;
+    padding:20px;
+}
 .header {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 111px; /*20px + 91 px altezza menu*/
+    padding-top: 111px; /*20px + 91 px altezza menu+*/
 }
 
 .breadcrumb-content {
@@ -78,9 +98,11 @@ nav .menu .menu-items, nav .menu .logo, .menu-items li {
     margin-top: 50px;
     margin-bottom:50px;
 }
-
-.blocco-news
-{
+.content-full-width {
+    width: 100%;
+    text-align: center;
+}
+.blocco-news{
     display: inline-block;
     width: 70%;
 
@@ -88,10 +110,40 @@ nav .menu .menu-items, nav .menu .logo, .menu-items li {
 
 .news .copertina {
     width: 100%;
+   
+    
+
+}
+.news .copertina:hover {
+    width: 50%;
+
+}
+.altri-post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
 }
 
+ .altri-post .item-1 {
+    background-color:red;
+    height: 300px;
+    width:200px;
+   
+}
+.altri-post .item-2 {
+    background-color:blue;
+    height:230px;
+    width:150px;
+  
+}
+.altri-post .item-3 {
+    background-color:green;
+    width:100px;
+    align-self: flex-end;
+}
 aside {
-    padding-left: 50px;
+    padding-left: 10px;
     display: inline-block;
     width: 29%;
     vertical-align: top;
@@ -103,13 +155,34 @@ aside {
     
 }
 .footer p{
-    font-size: large;
     max-width: 960px;
     margin: 0 auto;
 }
-.breadcrumb {
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+.black.footer span {
+    font-size: large;
+}
+.input-container{
+    display: flex;
+}
+
+.blocco-ricerca .fa{
+    color:#747474;
+    padding: 15px;
+    background-color: lightgrey;
+}
+
+#ricerca-news {
+    background-color: lightgrey;
+    padding: 15px;
+    border:none;
+    width:100%;
+}
+#ricerca-news:focus{
+    outline: none;
+}
+#submit-news{
+    display: none;
 }
 .blocco-articoli ul {
     padding-left:0px;
@@ -125,20 +198,24 @@ aside {
     text-decoration: none;
 
 }
-.tag a {
-    color: gray;
-    background-color: lightgray;
-    text-decoration: none;
+
+.tag {
+    background-color: gray;
     padding: 10px;
-    line-height:3;
-    margin-left: 2px;
-    margin-right: 2px;  
+    margin:5px;
+    display: inline-block;  
+    transition: background-color 2000ms;
+
 }
 
-.tag a:hover {
-    color:white;
+.tag a {
+    text-decoration: none;
+    color: white;
+    
+}
+.tag:hover {
     background-color:darkred;
-    transition: 0.3s;
+    
 }
 #blocco-contatti {
     text-align: center;
@@ -167,4 +244,24 @@ aside {
 span.intestazione  {
     text-transform: uppercase;
     font-weight: bold;
+}
+.blocco_welcome{
+    padding: 30px 20%;
+}
+
+.blocco_video{
+    background-color: black;
+}
+
+.servizio{
+    display:inline-block;
+    width: 25%;
+    padding: 10px;
+
+}
+.servizio .fa {
+    font-size: 30px;
+}
+.container-servizi {
+    margin-top:40px
 }

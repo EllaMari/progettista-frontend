@@ -9,18 +9,32 @@
          <!--<meta http-equiv="refresh" content="30"> -->
          <meta name="viewport" content="width=device-width, initial-scale=1.0">  
          <link rel="stylesheet" href="assets/css/main.css">
-         
+         <link rel="stylesheet" href="assets/css/mobile.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-    <!--blocco menu-->
+    <body class="novità">
+        <div class="black mobile-menu">
+            <ul class="mobile-menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="chi siamo.html">Chi siamo</a></li>
+                <li><a href="#">Servizi</a></li>
+                <li><a href="#">Case history</a></li>
+                <li><a href="novità.html"> News</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    <!-- blocco menu-->
     <nav>
         <div class="black menu"> 
+            <div class="burger-menu">
+                <img src="assets/img/burger.png">
+            </div>
             <ul class="menu-items">
-                <li> <a href="#">Home</a></li>
-                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="chi siamo.html">Chi siamo</a></li>
                 <li><a href="#">Servizi</a></li>
             </ul>
-            <a class="logo" href="https://www.time2marketing.com/"> <img src="img/logotime2marketing.png" alt="logo time 2 marketing"></a>
+            <a class="logo" href="https://www.time2marketing.com/"> <img src="assets/img/logotime2marketing.png" alt="logo time 2 marketing"></a>
             <ul class="menu-items">
                 <li><a href="#">Case history</a></li>
                 <li><a href="novità.html"> News</a></li>
@@ -28,6 +42,7 @@
             </ul>
         </div>
     </nav> 
+   
     <!--Blocco header-->
     <header>
         <div class="red header">
@@ -37,39 +52,74 @@
     <!--breadcrumb-->  
     <div class="black breadcrumb">
         <div class="breadcrumb-content">
-            <p>Home/Novità/</p>
+            <p>Home/ Novità/</p>
         </div>
     </div>
+     <!-- blocco content largo massimo 960px -->
     <div class="content">
         <!-- blocco news-->
         <div class="blocco-news">
+            <!--news 1-->
             <article>
                 <div id="news-1" class="news">
-                    <img class="copertina" src="img/immagine mascherina news.jpg" alt="donna con mascherina">
-                    <h2>Come scoprire un sorriso dietro la mascherina</h2>
-                    <p> 9 giugno 2020 / By <a href="#">Giuliano Aluffi</a></p>
-                    <div>
-                        <p> I dispositivi di protezione in realtà non nascondono completamente la nostra espressività.</p>
-                        <p>La mascherina anti Coronavirus, coprendo buona parte del viso, ci rende assai meno riconoscibili ed è il motivo per cui il nuovo aggiornamento di <del cite="https://support.apple.com/it-it/HT210393" datetime="2019-06-29">iOS 13,5</del> <ins>iOS 13,6</ins> di
-                            Apple per l'iPhone ora permette di sbloccare il telefono senza dover aspettare che il riconoscimento facciale fallisca più volte.
-                        </p>
+                    <div class="copertina-container">
+                        <img class="copertina" src="assets/img/immagine mascherina news.jpg" alt="donna con mascherina">
                     </div>
-                    <span><a href="articoli/articolo6.html" title="Leggi la news Come scoprire un sorriso dietro la mascherina">Leggi la news</a></span> 
+                    <div class="news-content">
+                        <h2>Come scoprire un sorriso dietro la mascherina</h2>
+                        <p> 9 giugno 2020 / By <a href="#">Giuliano Aluffi</a></p>
+                        <div>
+                            <p> I dispositivi di protezione in realtà non nascondono completamente la nostra espressività.</p>
+                            <p>La mascherina anti Coronavirus, coprendo buona parte del viso, ci rende assai meno riconoscibili ed è il motivo per cui il nuovo aggiornamento di <del cite="https://support.apple.com/it-it/HT210393" datetime="2019-06-29">iOS 13,5</del> <ins>iOS 13,6</ins> di
+                            Apple per l'iPhone ora permette di sbloccare il telefono senza dover aspettare che il riconoscimento facciale fallisca più volte.
+                            </p>
+                        </div>
+                        <span><a href="articoli/articolo6.html" title="Leggi la news Come scoprire un sorriso dietro la mascherina">Leggi la news</a></span> 
+                    </div>
                 </div>
             </article>
             <hr>
+            <!--news 2-->
             <article>
                 <div id="news-2" class="news">
-                    <img class="copertina" src="img/immagine mascherina news.jpg" alt="donna con mascherina">
-                    <h2>Titolo</h2>
-                    <p> Data e autore</p>
-                    <p>paragrafo news</p>
+                    <img class="copertina" src="assets/img/cover-50-comuni.jpg" alt="primi 50 comununi">
+                    <div class="news-content">
+                        <h2>I primi 50 comuni italiani per presenza turistiche</h2>
+                        <p> 12 dicembre 2018 / By <a href="">time2marketing</a></p>
+                        <p>Alla fine del mese di novembre 2018 sono state pubblicate dall’ ISTAT le statistiche sul movimento turistico italiano relative al 2017. Ciò che emerge a livello generale continua a confermare la crescita dell’importanza di questo settore nel nostro paese. È stato infatti un anno molto positivo, in cui si è verificato un superamento del picco di presenze e di arrivi complessivi raggiunto nel 2016.</p>
+                        <span><a href="articoli/articolo4.html" title="Leggi la news I primi 50 comuni italiani per presenze turistiche">Leggi la news</a></span> 
+                    </div>
                 </div>
             </article>
+            <!--blocco altri post-->
+            <div class="altri-post" >
+                <div class="item-1">
+                    <h2>Titolo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="item-2">
+                    <h2>Titolo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="item-3">
+                    <h2>Titolo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
         </div>
         <!--blocco colonna dx-->
         <aside>
             <div class="colonna-dx">
+                <!--input di ricerca-->
+                <div class="blocco-ricerca">
+                    <form action="/action-page.php" method="GET">
+                        <div class="input-container">
+                            <input type="search" id="ricerca-news" name="ricerca" placeholder="Ricerca">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="submit" id="submit-news" value="cerca">
+                        </div> 
+                    </form>
+                </div>
                 <!--lista articoli recenti-->
                 <div class="blocco-articoli"> 
                     <h4> Articoli recenti</h4>
@@ -98,7 +148,5 @@
             </p>
         </div>
     </footer>
-        
-        
     </body>
 </html>
