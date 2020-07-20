@@ -10,77 +10,119 @@ body {
 .white {
     background-color: white;
     color: black
-
 }
 
 .grey {
     background-color:#EAEAE5;
 }
-
-    
+ h1 {
+     font-size: 30px;;
+ }
+   
 nav {
     width:100%;
     top:10px; 
     text-align: center;
 }
 
- .menu-items li {
+.menu-items li {
     display: inline-block;
     list-style: none;
     padding: 20px;
  }
- a.logo, .menu-items li a  {
+
+a.logo, .menu-items li a  {
     color: black;
     text-decoration: none;
  }
-  .menu-items li a:hover {
+
+a.logo {
+     font-size: 40px; ;
+ }
+
+.logo span {
+     color: #00d2b5
+ }
+
+.menu-items li a:hover {
       color: #00d2b5;
  }
 
-  .landing-page, .create-prototypes {
-    display:flex;
-    align-items: center;
-    
+.landing-page, .div-prototypes, .features-container  {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center; 
   }
-  .call-to-action {
-      padding-left: 200px;
-      width: 50%;
+
+.call-to-action {
+      padding-left: 180px;
+  }
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 15px;
+    color: white;
+    background-color:#00d2b5;
+    padding: 15px 25px; 
+    border-radius: 25px;
+    border: none;
+}
+
+.landing-img img {
       
-  }
-
-  .landing-img, .prototypes-img {
-      width:50%
-  }
-
-  .landing-img img {
-      height: 500px;
-      width: auto;
       max-width: 100%;
   }
 
-  .features-container {
-      
-      display: flex;
-      flex-direction: row ;
-    
-      
-
+.container {
+      padding-top: 70px;
+      padding-bottom: 100px;
+      padding-left: 180px;
+      padding-right: 180px;
   }
 
-  .features-item {
+.container h1 {
+      text-align: center;
+      padding-bottom:40px;
+      margin:0;
+  }
+
+#features {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.material-icons {
+      color: white;
+      background-color: #00d2b5;
+      padding: 5px;
+      border-radius: 50%;
+  }
+
+.features-item {
       width: 30%;
       margin: 10px;
-      padding: 10px;
+      padding: 30px;
+      border-radius: 5px ;
   }
 
-  .features, .prototypes-section {
-      padding-left: 200px;
-      padding-right: 200px;
+.features-item a {
+    color: #00d2b5;
+    text-decoration: none;
   }
 
-  .features h1, .about-us h1 {
-      text-align: center;
+#contact-form{
+    max-width: 100%;
+    margin: 0 100px;
+    }
+
+
+.prototypes-img img {
+      width:500px;
+      height: auto;
   }
-  .prototypes-img img {
-      width:600px;
-  }
+ #about-us .prototypes-container {
+     padding-left: 100px;
+     text-align: left;
+ }

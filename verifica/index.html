@@ -10,7 +10,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">  
          <link rel="stylesheet" href="css/main.css">
          <link rel="stylesheet" href="">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body class ="content">
         <!--blocco menu-->
@@ -43,23 +43,23 @@
                 </div>
         </section>
         <!--blocco features-->
-        <section class="grey features">
+        <section class="grey container" id="features">
             <h1> Features</h1>
             <div class="features-container">
-                <div class=" white features-item" id="business">
-                    <i class="fas fa-sync-alt"></i>
+                <div class="white features-item" id="business">
+                    <i class="material-icons">sync</i>
                     <h4>Business Consulting</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class=" white features-item" id="market">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="material-icons">sync</i>
                     <h4>Market Analysis</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class="white features-item" id="user">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="material-icons">sync</i>
                     <h4>User Monitoring</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
@@ -67,19 +67,19 @@
             </div>
             <div class="features-container">
                 <div class="white features-item" id="insurance">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="material-icons">sync</i>
                     <h4>Insurance Consulting</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class=" white features-item" id="custormer">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="material-icons">sync</i>
                     <h4>Customer Satisfied</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class=" white features-item" id="plug-and-play">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="material-icons">sync</i>
                     <h4>Plug & Play</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida. Vestibulum eu rhoncus felis. Praesent eleifend fermentum ex, et euismod urna condimentum non.</p>
                     <a href="#">Learn More</a>
@@ -88,17 +88,18 @@
         </section>
 
         <!--blocco create interactive prototypes-->
-        <section class="prototypes-section">
-            <div class="create-prototypes">
+        <section class="white container">
+            <div class="div-prototypes">
+                <div class="prototypes-img" >
+                <img src="img/do_ui_kit_download_cta_floating_devices-2x.png" alt="floating mockup">
+                </div>
                 <div class="prototypes-container">
                 <h1>Create interactive prototypes</h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida.</p>
                 </div>
-                <div class="prototypes-img" >
-                <img src="img/do_ui_kit_download_cta_floating_devices-2x.png" alt="floating mockup">
-                </div>
+                
             </div>
-            <div class="create-prototypes">
+            <div class="div-prototypes">
                 <div class="prototypes-container">
                 <h1>Create interactive prototypes</h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida.</p>
@@ -109,23 +110,29 @@
             </div>
         </section>
         <!--blocco about us-->
-        <section class="about-us">
+        <section class="grey container" id="about-us" >
             <h1> About Us</h1>
-            <div class="create-prototypes">
-                <div class="prototypes-container">
-                <h1>Create interactive prototypes</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida.</p>
-                </div>
+            <div class="div-prototypes">
                 <div class="prototypes-img" >
-                <img src="img/do_ui_kit_download_cta_floating_devices-2x.png" alt="floating mockup">
+                <img src="img/about_1.jpg" alt="ragazzi al pc">
                 </div>
+                <div class="prototypes-container">
+                <h4>Create interactive prototypes</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus hendrerit arcu et gravida.
+                </p>
+                <button class="button"> Learn More</button>
+                </div>  
             </div>
+        </section>
 
         <!--blocco testimonials-->
         <!--blocco blog-->
         <!--blocco contact form-->
-        <section class="contact-form"> 
+        <section class="grey container"> 
             <h1> Get in touch</h1>
+            <div class="white" id="contact-form">
+            <h4>Contact form</h4>
             <form action="/action-page.php">
                 <label for="fname"> Nome</label> <br>
                 <input type="text" id="fname" name="fname" placeholder="Nome"> <br>
@@ -133,12 +140,12 @@
                 <input type="text" id="lname" name="lname" placeholder="Cognome"> <br>
                 <label for="email"> Email</label> <br>
                 <input type="email" id="email" name="email" placeholder="Email"> <br>
-                <label for="message"> Messaggio</label>
+                <label for="message"> Messaggio</label> <br>
                <textarea name="message" rows="10" cols="10">Scrivi qui il tuo commento</textarea> <br>
-
-        <input type="submit" value="Invia">
-
-      </form></section>
+               <input type="submit" value="Invia">
+            </form>
+            </div>
+        </section>
         
         <!--footer-->
         <footer>
